@@ -1,0 +1,236 @@
+.detail_body{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    /* overflow: scroll; */
+    height: auto;
+    top: 120px;
+}
+.detail_vis{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;     
+}
+.detail_head{
+    width:100%;
+}
+.detail_head > h1{
+    font-size: 3.5rem;
+    padding: 4% 6% 3.5%;
+    color:white;
+    background-color: #8a0a0a;
+    margin:0;
+}
+.detail_hr{
+    width: 100%;
+    height: 1px;
+    color:black;
+}
+.detail_auth{
+    width: 100%;
+    background-color: #8a0a0a;
+}
+.detail_auth > h2{
+    color:white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
+}
+.detail_auth > h3{
+    color:white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.detail_dec{
+    width: 100%;
+    background-color: #8a0a0a;
+}
+.detail_dec > p{
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: .05em;
+    color: #f3f3f3;
+    font-family: 'Avenir LT W01 55 Roman',sans-serif;
+    font-size: .875rem;
+    line-height: 1.45em;
+}
+.detail_gd{
+    width: 100%;
+    background-color: #8a0a0a;
+    padding-bottom: 40px;
+}
+.detail_gd > p{
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: .05em;
+    color: #f3f3f3;
+    font-family: 'Avenir LT W01 55 Roman',sans-serif;
+    font-size: .875rem;
+    line-height: 1.45em;
+}
+.detail_img_w{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.detail_img_item_w{
+    width: 50%;
+    overflow: hidden;
+}
+.detail_img_item_w:hover{
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.detail_img_item_w > img{
+    width: 100%;
+    height: 100%;
+}
+.detail_img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.detail_img_item:hover{
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.detail_img_item{
+    width: 25%;
+    overflow: hidden;
+}
+.detail_img_item > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 750px){
+    .detail_body{
+        top: 50px;
+    }
+    .detail_vis{
+        width: 100%;
+    }
+    .detail_head > h1{
+        font-size: 2rem;
+    }
+    .detail_hr{
+        width: 100%;
+        height: 1px;
+        color:black;
+    }
+    .detail_auth{
+        width: 100%;
+        background-color: #8a0a0a;
+    }
+    .detail_auth > h2{
+        color:white;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 0;
+    }
+    .detail_auth > h3{
+        color:white;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .detail_dec{
+        width: 100%;
+        background-color: #8a0a0a;
+    }
+    .detail_dec > p{
+        margin-left: 50px;
+        margin-right: 50px;
+        letter-spacing: .05em;
+        color: #f3f3f3;
+        font-family: 'Avenir LT W01 55 Roman',sans-serif;
+        font-size: .875rem;
+        line-height: 1.45em;
+    }
+    .detail_gd{
+        width: 100%;
+        background-color: #8a0a0a;
+        padding-bottom: 40px;
+    }
+    .detail_gd > p{
+        margin-left: 50px;
+        margin-right: 50px;
+        letter-spacing: .05em;
+        color: #f3f3f3;
+        font-family: 'Avenir LT W01 55 Roman',sans-serif;
+        font-size: .875rem;
+        line-height: 1.45em;
+    }
+    .detail_img_w{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .detail_img_item_w{
+        width: 100%;
+        overflow: hidden;
+    }
+    .detail_img_item_w:hover{
+        opacity: 0.7;
+        transition: all 0.5s;
+    }
+    .detail_img_item_w > img{
+        width: 100%;
+        height: 100%;
+    }
+    .detail_img{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .detail_img_item:hover{
+        opacity: 0.7;
+        transition: all 0.5s;
+    }
+    .detail_img_item{
+        width: 50%;
+        overflow: hidden;
+    }
+    .detail_img_item > img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .detail_img{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .detail_img_item:hover{
+        opacity: 0.7;
+        transition: all 0.5s;
+    }
+    .detail_img_item{
+        width: 100%;
+        overflow: hidden;
+    }
+    .detail_img_item > img{
+        width: 100%;
+        height: 100%;
+    }
+}
