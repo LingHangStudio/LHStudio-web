@@ -8,10 +8,10 @@ const Helper: React.FC = () => {
     <div className="helper_body">
       <div className="helper_vis">
         <div className="helper_head">
-          <img src={require('./img/lunbo1.jpg')} alt="" />
+          <img src={require('./img/lunbo1.jpg').default} alt="" />
           <div className="helper_head_img">
             <div className="helper_head_phone">
-              <img src={require('./img/samsung_android.png')} alt="" />
+              <img src={require('./img/samsung_android.png').default} alt="" />
             </div>
           </div>
           <div className="helper_head_btn">
@@ -37,15 +37,15 @@ const Helper: React.FC = () => {
             </p>
           </div>
           <div className="helper_item1">
-            <img src={require('./img/1(3).png')} alt="" />
+            <img src={require('./img/1(3).png').default} alt="" />
           </div>
         </div>
         <div className="helper_h" style={{ backgroundColor: 'rgb(129,199,132)' }}>
           <div className="helper_item1">
-            <img src={require('./img/2(1).png')} alt=""></img>
+            <img src={require('./img/2(1).png').default} alt=""></img>
           </div>
           <div className="helper_item1">
-            <img src={require('./img/3.png')} alt=""></img>
+            <img src={require('./img/3.png').default} alt=""></img>
           </div>
           <div className="helper_item2" style={{ backgroundColor: 'rgb(129,199,132)' }}>
             <h2 style={{ color: 'white' }}>便捷的成绩查询</h2>
@@ -60,11 +60,8 @@ const Helper: React.FC = () => {
             <p>资讯，黄历，校车，学分统计，教务新闻，考试倒计时，随时随地，开启校园之旅！</p>
           </div>
           <div className="helper_item1">
-            <img src={require('./img/home.jpg')}></img>
+            <img src={require('./img/home.jpg').default} alt=""/>
           </div>
-        </div>
-        <div className="footer_vis">
-          <div className="footer_copy">©2023 LingHang Studio. 武汉科技大学 领航工作室</div>
         </div>
       </div>
     </div>

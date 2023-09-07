@@ -40,11 +40,11 @@ const Connect: React.FC = () => {
                   {item.post}：{item.name}
                 </h2>
                 <div>
-                  <img src={require('./img/email.png')} alt="" />
+                  <img src={require('./img/email.png').default} alt="" />
                   <span>{item.email}</span>
                 </div>
                 <div>
-                  <img src={require('./img/qq.png')} alt="" />
+                  <img src={require('./img/qq.png').default} alt="" />
                   <span>{item.qq}</span>
                 </div>
               </div>

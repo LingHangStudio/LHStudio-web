@@ -78,7 +78,7 @@ const Head: React.FC = () => {
             ></div>
           </div>
           <div className="nav_logo" onClick={jumpToIndex}>
-            <img src={require('../../static/lh.png')} alt=""></img>
+            <img src={require('../../static/lh.png').default} alt=""></img>
           </div>
           <div className="nav_opt">
             <div className="nav_item" onClick={() => history('/studio')}>

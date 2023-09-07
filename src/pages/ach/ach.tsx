@@ -11,7 +11,7 @@ const Ach: React.FC = () => {
         <header className="ach_head">成员练手的小demo</header>
         <div className="ach_item">
           <div className="ach_item_img" onClick={() => godetail('wyy')}>
-            <img src={require('./img/1.png')} alt=""></img>
+            <img src={require('./img/1.png').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>仿网易云音乐桌面音乐播放器</h3>
@@ -22,7 +22,7 @@ const Ach: React.FC = () => {
         </div>
         <div className="ach_item">
           <div className="ach_item_img" onClick={() => godetail('rck')}>
-            <img src={require('./img/rck_m.jpg')} alt="" />
+            <img src={require('./img/rck_m.jpg').default} alt="" />
           </div>
           <div className="ach_item_dsc">
             <h3>日程快</h3>
@@ -37,7 +37,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'rgb(157,211,227)' }}
             onClick={() => godetail('wt')}
           >
-            <img src={require('./img/wt.jpg')} alt="" />
+            <img src={require('./img/wt.jpg').default} alt="" />
           </div>
           <div className="ach_item_dsc">
             <h3>wetalk</h3>
@@ -52,7 +52,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'yellow' }}
             onClick={() => godetail('qxp')}
           >
-            <img src={require('./img/qxp.jpg')} alt=""></img>
+            <img src={require('./img/qxp.jpg').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>一身诗意千寻铺</h3>
@@ -67,7 +67,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'yellow' }}
             onClick={() => godetail('am')}
           >
-            <img src={require('./img/AppMarket_1.jpeg')} alt=""></img>
+            <img src={require('./img/AppMarket_1.jpeg').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>AppMarket</h3>
@@ -80,7 +80,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'yellow' }}
             onClick={() => godetail('ep')}
           >
-            <img src={require('./img/EventParticipant_1.jpg')} alt=""></img>
+            <img src={require('./img/EventParticipant_1.jpg').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>EventParticipant</h3>
@@ -93,7 +93,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'yellow' }}
             onClick={() => godetail('kdxd')}
           >
-            <img src={require('./img/科大小店_1.jpg')} alt=""></img>
+            <img src={require('./img/科大小店_1.jpg').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>科大小店</h3>
@@ -108,7 +108,7 @@ const Ach: React.FC = () => {
             style={{ backgroundColor: 'yellow' }}
             onClick={() => godetail('xlkdb')}
           >
-            <img src={require('./img/心理课代表_1.jpg')} alt=""></img>
+            <img src={require('./img/心理课代表_1.jpg').default} alt=""></img>
           </div>
           <div className="ach_item_dsc">
             <h3>心理课代表</h3>
@@ -116,9 +116,6 @@ const Ach: React.FC = () => {
           </div>
         </div>
       </section>
-      <div className="footer_vis">
-        <div className="footer_copy">©2023 LingHang Studio. 武汉科技大学 领航工作室</div>
-      </div>
     </div>
   );
 };

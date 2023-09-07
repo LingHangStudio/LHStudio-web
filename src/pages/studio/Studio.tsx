@@ -3,44 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './studio.less';
 
 const Studio: React.FC = () => {
-  const history = useNavigate()
-  const photeLarg = [
-    {
-      src: './img/main-0.jpg'
-    },
-    {
-      src: './img/main-1.jpg'
-    }
-  ];
-  const photoSquaredFirst = [
-    {
-      src: './img/13-0.jpg'
-    },
-    {
-      src: './img/13-1.jpg'
-    }
-  ];
-  const photeSquaredSecond = [
-    {
-      src: './img/13-2.jpg'
-    },
-    {
-      src: './img/13-3.jpg'
-    },
-    {
-      src: './img/13-4.jpg'
-    },
-    {
-      src: './img/13-5.jpg'
-    },
-    {
-      src: './img/13-6.jpg'
-    },
-    {
-      src: './img/13-7.jpg'
-    }
-  ];
-
+  const history = useNavigate();
   return (
     <div className="studio_body">
       <div className="studio_vis">
@@ -63,16 +26,13 @@ const Studio: React.FC = () => {
             </div>
           </div>
           <div className="studio_item2">
-            <img src={require('./img/banner1.jpg')}></img>
+            <img src={require('./img/banner1.jpg').default} alt="banner" />
           </div>
         </div>
         <div className="studio_h1" style={{ flexWrap: 'wrap' }}>
           <div className="studio_item3" style={{ cursor: 'pointer' }}>
-            <img src={require('./img/java.jpg')} className="studio_item3_img" alt="" />
-            <div
-              className="studio_item3_btn"
-              onClick={() => history('studio/java')}
-            >
+            <img src={require('./img/java.jpg').default} className="studio_item3_img" alt="" />
+            <div className="studio_item3_btn" onClick={() => history('studio/java')}>
               <span>了解更多</span>
             </div>
           </div>
@@ -108,22 +68,16 @@ const Studio: React.FC = () => {
             </div>
           </div>
           <div className="studio_item3" style={{ cursor: 'pointer' }}>
-            <img src={require('./img/fe1.png')} className="studio_item3_img" alt=""></img>
-            <div
-              className="studio_item3_btn"
-              onClick={() => history('studio/fe')}
-            >
+            <img src={require('./img/fe1.png').default} className="studio_item3_img" alt=""></img>
+            <div className="studio_item3_btn" onClick={() => history('studio/fe')}>
               <span>了解更多</span>
             </div>
           </div>
         </div>
         <div className="studio_h1" style={{ flexWrap: 'wrap' }}>
           <div className="studio_item3" style={{ cursor: 'pointer' }}>
-            <img src={require('./img/android.jpg')} className="studio_item3_img"></img>
-            <div
-              className="studio_item3_btn"
-              onClick={() =>history('studio/android')}
-            >
+            <img src={require('./img/android.jpg').default} alt="" className="studio_item3_img" />
+            <div className="studio_item3_btn" onClick={() => history('studio/android')}>
               <span>了解更多</span>
             </div>
           </div>
@@ -146,13 +100,13 @@ const Studio: React.FC = () => {
 
         <div className="studio_h1 margintop">
           <div className="studio_item66">
-            <img src={require('./img/main-0.jpg')}></img>
+            <img src={require('./img/main-0.jpg').default} alt="" />
           </div>
         </div>
 
         <div className="studio_h1">
           <div className="studio_item66">
-            <img src={require('./img/main-1.jpg')} />
+            <img src={require('./img/main-1.jpg').default} alt="" />
           </div>
         </div>
         <div className="studio_h1 margintop" style={{ flexWrap: 'wrap' }}>
@@ -161,11 +115,11 @@ const Studio: React.FC = () => {
             <p>扬帆起航</p>
           </div>
           <div className="studio_item6">
-            <img src={require('./img/13-0.jpg')} />
+            <img src={require('./img/13-0.jpg').default} alt="" />
           </div>
 
           <div className="studio_item6">
-            <img src={require('./img/13-1.jpg')} />
+            <img src={require('./img/13-1.jpg').default} alt="" />
           </div>
 
           {/* <div className = 'studio_item5' style = {{backgroundColor:'green'}}></div> */}
@@ -173,25 +127,25 @@ const Studio: React.FC = () => {
 
         <div className="studio_h1" style={{ flexWrap: 'wrap' }}>
           <div className="studio_item8">
-            <img src={require('./img/13-2.jpg')} />
+            <img src={require('./img/13-2.jpg').default} alt="" />
           </div>
           <div className="studio_item8">
-            <img src={require('./img/13-3.jpg')} />
+            <img src={require('./img/13-3.jpg').default} alt="" />
           </div>
           <div className="studio_item8">
-            <img src={require('./img/13-4.jpg')} />
+            <img src={require('./img/13-4.jpg').default} alt="" />
           </div>
           {/* <div className = 'studio_item5' style = {{backgroundColor:'green'}}></div> */}
         </div>
         <div className="studio_h1" style={{ flexWrap: 'wrap' }}>
           <div className="studio_item8">
-            <img src={require('./img/13-5.jpg')} />
+            <img src={require('./img/13-5.jpg').default} alt="" />
           </div>
           <div className="studio_item8">
-            <img src={require('./img/13-6.jpg')} />
+            <img src={require('./img/13-6.jpg').default} alt="" />
           </div>
           <div className="studio_item8">
-            <img src={require('./img/13-7.jpg')} />
+            <img src={require('./img/13-7.jpg').default} alt="" />
           </div>
           {/* <div className = 'studio_item5' style = {{backgroundColor:'green'}}></div> */}
         </div>

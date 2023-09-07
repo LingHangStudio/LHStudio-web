@@ -41,25 +41,25 @@ const Download:React.FC = ()=>{
                         {/* <div className="intro">安卓端 IOS端 小程序...</div> */}
                         </div>
                         <div className="img-content">
-                            <img className="mobile-img" src = {require('./img/mobile2.png')} alt="" />
+                            <img className="mobile-img" src = {require('./img/mobile2.png').default} alt="" />
                         </div>
                         <div className="title">
                             <div>丰富齐全的功能</div>
                             <div className="intro">课表、成绩、工时、学分、倒计时...</div>
                         </div>
                         <div className="img-content">
-                            <img className="mobile-img" src = {require('./img/mobile3.png')} alt="" />
+                            <img className="mobile-img" src = {require('./img/mobile3.png').default} alt="" />
                         </div>
                         <div className="title">
                          <div>武科大领航工作室出品</div>
                          <div className="intro">随时随地，开启校园之旅</div>
                         </div>
                         <div className="img-content">
-                            <img className="mobile-img" src = {require('./img/mobile4.png')} alt="" ></img>
+                            <img className="mobile-img" src = {require('./img/mobile4.png').default} alt="" ></img>
                         </div>
                     </div>
                 <div className="download-content">
-                    <img className="logo-img" src = {require('./img/logo2.png')} alt="" ></img>
+                    <img className="logo-img" src = {require('./img/logo2.png').default} alt="" ></img>
                     <div className="download-btn" onClick={DownloadApp}>
                          <div className="btn"> 立即下载</div>
                     </div>

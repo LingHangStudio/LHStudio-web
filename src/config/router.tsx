@@ -13,6 +13,11 @@ interface routerType {
 export const routersList: routerType[] = [
   {
     name: '主页',
+    path: '/',
+    element: React.lazy(() => import('../pages/studio/Studio')),
+  },
+  {
+    name: '主页',
     path: '/studio',
     element: React.lazy(() => import('../pages/studio/Studio')),
   },
