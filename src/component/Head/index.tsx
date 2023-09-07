@@ -1,15 +1,15 @@
 /* eslint-disable complexity */
-import React, {  useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './styles.less';
 
-const null_style = {}
+const null_style = {};
 
-interface stateType{
-  open?: boolean
-  page?: string
-  mobile?: boolean
-  navH?:number
+interface stateType {
+  open?: boolean;
+  page?: string;
+  mobile?: boolean;
+  navH?: number;
 }
 
 const Head: React.FC = () => {
@@ -101,13 +101,7 @@ const Head: React.FC = () => {
                 工作室
               </span>
             </div>
-            <div
-              className="nav_item"
-              onClick={() => {
-                window.location.pathname = '/new';
-                return;
-              }}
-            >
+            <div className="nav_item" onClick={() => history('/new')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -212,11 +206,4 @@ const Head: React.FC = () => {
   );
 };
 
-
 export default Head;
-
-
-
-
-
-

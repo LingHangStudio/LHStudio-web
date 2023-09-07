@@ -1,12 +1,8 @@
 import React from 'react'
-import './new.css'
+import './new.less'
 
-class New extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-    render() {
+const New:React.FC = ()=> {
+        const state = {}
         return (
             <div className='new_body'>
                 <section className='new_vis'>
@@ -53,13 +49,7 @@ class New extends React.Component {
                     </div>
                     <header className='new_head' style={{ fontSize: '1.0em', fontWeight: 550 }}>加载更多</header>
                 </section>
-                <div className='footer_vis'>
-                    <div className='footer_copy'>
-                        ©2023 LingHang Studio. 武汉科技大学 领航工作室
-                    </div>
-                </div>
             </div>
         )
-    }
 }
 export default New

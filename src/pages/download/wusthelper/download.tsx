@@ -1,21 +1,14 @@
-import React  from 'react'
-import './download.css'
+import React from 'react'
+import './download.less'
 
-class Download extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-
-        }
-    }
-
-    DownloadApp() {
+const Download:React.FC = ()=>{
+    const DownloadApp = ()=> {
         var ua = window.navigator.userAgent.toLowerCase();
         console.log('ua',ua)
-        if (ua.match(/MicroMessenger/i) === 'micromessenger') {
+        if (ua.match(/MicroMessenger/i)?.toString() === 'micromessenger') {
             // 微信内打开
             console.log('is weixin')
-            if(ua.match(/iphone/i) === 'iphone'){
+            if(ua.match(/iphone/i)?.toString() === 'iphone'){
                 // ios用户，可以直接拉起App Store
                 window.location.href = 'https://apps.apple.com/cn/app/id1538426487'
             } else {
@@ -27,7 +20,7 @@ class Download extends React.Component{
         } else {
             console.log("not weixin")
             // 非微信浏览器内打开
-            if(ua.match(/iphone/i) === 'iphone'){
+            if(ua.match(/iphone/i)?.toString() === 'iphone'){
                 console.log('iphone')
                 window.location.href = 'https://apps.apple.com/cn/app/id1538426487'
             }
@@ -37,7 +30,6 @@ class Download extends React.Component{
             }
         }
     }
-    render(){
         return (
             <div className="container">
                 <div className="content">
@@ -68,12 +60,11 @@ class Download extends React.Component{
                     </div>
                 <div className="download-content">
                     <img className="logo-img" src = {require('./img/logo2.png')} alt="" ></img>
-                    <div className="download-btn" onClick={this.DownloadApp}>
+                    <div className="download-btn" onClick={DownloadApp}>
                          <div className="btn"> 立即下载</div>
                     </div>
                 </div>
             </div>
         )
-    }
 }
 export default Download
