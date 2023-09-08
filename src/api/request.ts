@@ -1,6 +1,4 @@
 import axios from 'axios';
-import { env } from '../config/env';
-
 interface requestType {
   data?: any;
   method?: string;
@@ -13,7 +11,7 @@ interface responseType {
 }
 
 const server = axios.create({
-  baseURL: env.baseUrl,
+  baseURL:'',
   timeout: 20000,
 });
 

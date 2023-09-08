@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ach.less';
 
 const Ach: React.FC = () => {
+  const history = useNavigate();
   const godetail = (e: any) => {
-    window.location.pathname = 'ach/detail/' + e;
+    history('/ach/detail/' + e);
   };
   return (
     <div className="ach_body">

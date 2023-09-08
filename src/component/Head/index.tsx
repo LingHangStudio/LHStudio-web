@@ -16,8 +16,8 @@ const Head: React.FC = () => {
   const history = useNavigate();
   const [state, setState] = useState<stateType>({
     open: false,
-    page: 'studio',
-    mobile: false,
+    page: '/studio',
+    mobile: false
   });
 
   useEffect(() => {
@@ -25,16 +25,16 @@ const Head: React.FC = () => {
     setState({
       page: window.location.pathname,
       mobile: document.body.clientWidth >= 750 ? false : true,
-      navH: 120,
+      navH: 120
     });
     window.addEventListener('resize', () => {
       if (document.body.clientWidth >= 750) {
         setState({
-          mobile: false,
+          mobile: false
         });
       } else {
         setState({
-          mobile: true,
+          mobile: true
         });
       }
     });
@@ -45,18 +45,24 @@ const Head: React.FC = () => {
     let scrollTop = document.documentElement.scrollTop; //滚动条滚动高度
     if (scrollTop >= 40) {
       setState({
-        navH: 90,
+        navH: 90
       });
     } else {
       setState({
-        navH: 120,
+        navH: 120
       });
     }
+  };
+  const jumpToPage = (path: any) => {
+    console.log(path)
+    setState({ ...state, open: false });
+    history(path)
   };
 
   const jumpToIndex = () => {
     window.location.href = 'http://wustlinghang.cn/';
   };
+
   return (
     <div style={{ width: '100%', backgroundColor: 'black', backgroundAttachment: 'fixed' }}>
       <div className="nav" style={state.mobile ? null_style : { height: state.navH + 'px' }}>
@@ -81,7 +87,7 @@ const Head: React.FC = () => {
             <img src={require('../../static/lh.png').default} alt=""></img>
           </div>
           <div className="nav_opt">
-            <div className="nav_item" onClick={() => history('/studio')}>
+            <div className="nav_item" onClick={() => jumpToPage('/studio')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -101,7 +107,7 @@ const Head: React.FC = () => {
                 工作室
               </span>
             </div>
-            <div className="nav_item" onClick={() => history('/new')}>
+            <div className="nav_item" onClick={() => jumpToPage('/new')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -119,7 +125,7 @@ const Head: React.FC = () => {
                 最新
               </span>
             </div>
-            <div className="nav_item" onClick={() => history('/helper')}>
+            <div className="nav_item" onClick={() => jumpToPage('/helper')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -139,7 +145,7 @@ const Head: React.FC = () => {
                 武科大助手
               </span>
             </div>
-            <div className="nav_item" onClick={() => history('/ach')}>
+            <div className="nav_item" onClick={() => jumpToPage('/ach')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -157,7 +163,7 @@ const Head: React.FC = () => {
                 成员作品
               </span>
             </div>
-            <div className="nav_item" onClick={() => history('/connect')}>
+            <div className="nav_item" onClick={() => jumpToPage('/connect')}>
               <div
                 className="nav_item_bg"
                 style={
@@ -185,19 +191,19 @@ const Head: React.FC = () => {
         style={{ height: window.innerHeight - 50 + 'px', left: state.open ? 0 : '-100%' }}
       >
         <div className="nav_page_dis">
-          <div className="nav_page_item" onClick={() => history('/studio')}>
+          <div className="nav_page_item" onClick={() => jumpToPage('/studio')}>
             工作室
           </div>
-          <div className="nav_page_item" onClick={() => history('/new')}>
+          <div className="nav_page_item" onClick={() => jumpToPage('/new')}>
             最新
           </div>
-          <div className="nav_page_item" onClick={() => history('/download')}>
+          <div className="nav_page_item" onClick={() => jumpToPage('/download')}>
             武科大助手
           </div>
-          <div className="nav_page_item" onClick={() => history('/ach')}>
+          <div className="nav_page_item" onClick={() => jumpToPage('/ach')}>
             成员成果
           </div>
-          <div className="nav_page_item" onClick={() => history('/connect')}>
+          <div className="nav_page_item" onClick={() => jumpToPage('/connect')}>
             联系我们
           </div>
         </div>

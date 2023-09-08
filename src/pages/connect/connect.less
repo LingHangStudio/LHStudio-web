@@ -1,142 +1,134 @@
-.con_body{
-    width: 100%;
-    background-color: black;
-    /* overflow: scroll; */
-    height: auto;
-    top: 120px;
+.con_body {
+  width: 100%;
+  background-color: black;
+  /* overflow: scroll; */
+  height: auto;
+  top: 120px;
+  min-height: 100vh;
 }
-.con_vis{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;       
+.con_vis {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.con_head{
-    position: relative;
-    width: 100%;
-    height: 55px;
-    background-color: #a90000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    font-family: 'Avenir LT W01 85 Heavy',sans-serif;
-    color:white;
-    font-weight: 600;
+.con_head {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background-color: #a90000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  font-family: 'Avenir LT W01 85 Heavy', sans-serif;
+  color: white;
+  font-weight: 600;
 }
-.con_h{
-    width: 100%;
-    /* height: 500px; */
-    /* background-color: rgb(240,240,240); */
-    /* background-color: #a90000; */
-    /* background-color: white; */
-    display: flex;
-    flex-direction: row;
-    /* justify-content: flex-start; */
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.con_h {
+  width: 100%;
+  /* height: 500px; */
+  /* background-color: rgb(240,240,240); */
+  /* background-color: #a90000; */
+  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.con_h > h3{
-    color:white;
+.con_h > h3 {
+  color: white;
 }
-.con_item{
-    width: 300px;
+.con_item {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.con_item > h2 {
+  font-weight: 400;
+}
+.con_item > div {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.con_item > div > img {
+  width: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.con_item > div > span {
+  font-size: 1.2em;
+  font-family: 'Avenir LT W01 85 Heavy', sans-serif;
+  color: #a90000;
+  margin-left: 10px;
+  font-weight: 300;
+}
+.con_item > div > span > a {
+  text-decoration: none;
+  color: #a90000;
+}
+
+@media only screen and (max-width: 1200px) {
+  .con_item {
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
+  }
 }
-.con_item > h2{
-    font-weight: 400;
-}
-.con_item > div{
-    width: 80%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-    background-color: white;
-    border-bottom: 1px solid rgb(200,200,200);
-}
-.con_item > div > img{
-    width: 30px;
+
+@media only screen and (max-width: 750px) {
+  .con_body {
+    width: 100%;
+    background-color: black;
+    /* overflow: scroll; */
     height: auto;
+    top: 50px;
+  }
+  .con_head {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #a90000;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
+    font-family: 'Avenir LT W01 85 Heavy', sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+  .con_item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-}
-.con_item > div > span{
-    font-size: 1.2em;
-    font-family: 'Avenir LT W01 85 Heavy',sans-serif;
-    color: #a90000;
-    margin-left: 10px;
-    font-weight: 300;
-}
-.con_item > div > span > a{
-    text-decoration: none;
-    color: #a90000;
-}
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1200px){
-    .con_item{
-        width: 50%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
-}
-
-
-
-@media only screen and (max-width: 750px){
-    .con_body{
-        width: 100%;
-        background-color: black;
-        /* overflow: scroll; */
-        height: auto;
-        top: 50px;
-    }
-    .con_head{
-        position: relative;
-        width: 100%;
-        height: 40px;
-        background-color: #a90000;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.0em;
-        font-family: 'Avenir LT W01 85 Heavy',sans-serif;
-        color:white;
-        font-weight: 600;
-    }
-    .con_item{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-    }
+  }
 }

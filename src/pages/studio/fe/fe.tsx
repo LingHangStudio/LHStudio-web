@@ -4,14 +4,14 @@ import './fe.less';
 const not_allow_signup = {
   opacity: 0.1,
   cursor: 'not-allowed',
-  pointerEvents: 'none'
+  pointerEvents: 'none',
 };
 
-const null_style = {}
+const null_style = {};
 
 const Fe: React.FC = () => {
   const state = {
-    can_signup: false
+    can_signup: false,
   };
   return (
     <div className="fe_body">
@@ -44,13 +44,13 @@ const Fe: React.FC = () => {
             </div>
           </div>
           <div className="fe_item2">
-            <img src={require('../img/html.png')}></img>
+            <img src={require('../img/html.png').default} alt=""></img>
           </div>
         </div>
 
         <div className="fe_h" style={{ backgroundColor: 'white' }}>
           <div className="fe_item3">
-            <img src={require('../img/rn.png')}></img>
+            <img src={require('../img/rn.png').default} alt=""></img>
           </div>
           <div className="fe_item4">
             <p>大前端的发展趋势，让你轻松使用上自己亲手写的软件</p>
@@ -65,7 +65,7 @@ const Fe: React.FC = () => {
             <p>作为一个学习型组织，当知识共享成为常态，个人核心能力的提升也不再是枯燥而乏味</p>
           </div>
           <div className="fe_item6">
-            <img src={require('../img/learn.jpg')}></img>
+            <img src={require('../img/learn.jpg').default} alt=""></img>
           </div>
         </div>
 

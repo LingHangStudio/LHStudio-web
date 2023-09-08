@@ -1,20 +1,21 @@
-// import logo from './static/logo.svg';
 import { Router } from './config/router';
 import Head from './component/Head';
 import Footer from './component/Footer';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import './App.less';
 
 const App: React.FC = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Head />
+    <HashRouter>
+      <Head />
+      <div className="content">
         <Router />
-      </BrowserRouter>
-      <Footer />
-    </>
+      </div>
+      <div style={{ marginTop: 'auto' }}>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 };
 

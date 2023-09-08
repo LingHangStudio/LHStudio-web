@@ -35,12 +35,12 @@ const Android: React.FC = () => {
             </div>
           </div>
           <div className="android_item2">
-            <img src={require('../img/android_1.jpg')} alt=""></img>
+            <img src={require('../img/android_1.jpg').default} alt=""></img>
           </div>
         </div>
         <div className="android_h" style={{ backgroundColor: 'white' }}>
           <div className="android_item3">
-            <img src={require('../img/android_k.jpg')} alt=""></img>
+            <img src={require('../img/android_k.jpg').default} alt=""></img>
           </div>
           <div className="android_item4">
             <p>丰富的体系架构让你的开发得心应手</p>
@@ -54,7 +54,7 @@ const Android: React.FC = () => {
             <p>因热爱而相聚的团队，加入我们，共同学习，共同进步！</p>
           </div>
           <div className="android_item6">
-            <img src={require('../img/android_pp.jpg')} alt=""></img>
+            <img src={require('../img/android_pp.jpg').default} alt=""></img>
           </div>
         </div>
         <div className="android_item" id="join_us">
@@ -71,11 +71,6 @@ const Android: React.FC = () => {
             <input placeholder="qq号码"></input>
           </div>
           <button>提交信息</button>
-        </div>
-        <div className="footer_vis">
-          <div className="footer_copy">
-            Copyright ©2023 LingHang Studio. 武汉科技大学 领航工作室 All rights reserved.
-          </div>
         </div>
       </div>
     </div>

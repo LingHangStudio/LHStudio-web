@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loading from '../component/Loading/index';
-// import Loading from '@/component/Loading';
 
 interface routerType {
   name: string;
@@ -23,12 +22,17 @@ export const routersList: routerType[] = [
   },
   {
     name: 'java',
-    path: '/java',
+    path: '/studio/java',
     element: React.lazy(() => import('../pages/studio/java/java')),
   },
   {
+    name: 'fe',
+    path: '/studio/fe',
+    element: React.lazy(() => import('../pages/studio/fe/fe')),
+  },
+  {
     name: 'android',
-    path: '/android',
+    path: '/studio/android',
     element: React.lazy(() => import('../pages/studio/android/android')),
   },
   {
@@ -55,6 +59,11 @@ export const routersList: routerType[] = [
     name: 'ach',
     path: '/ach',
     element: React.lazy(() => import('../pages/ach/ach')),
+  },
+  {
+    name: 'detail',
+    path: '/ach/detail/:type',
+    element: React.lazy(() => import('../pages/ach/detail/detail')),
   },
 ];
 

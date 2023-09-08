@@ -22,7 +22,7 @@ const Connect: React.FC = () => {
       email: '1670149054@qq.com',
     },
     {
-      name: '刘心武',
+      name: '刘新武',
       post: '移动开发组长',
       qq: '2540493541',
       email: 'liuxinwulxw@qq.com',
@@ -50,31 +50,6 @@ const Connect: React.FC = () => {
               </div>
             );
           })}
-          {/* 
-                        <div className = 'con_item' style = {{backgroundColor:'rgb(246,246,246)'}}>
-                            <h2>前端组负责人：江洪</h2>
-                            <div  style = {{backgroundColor:'rgb(246,246,246)'}}>
-                                <img src = {require('./img/email.png')}></img>
-                                <span>oukars@qq.com</span>
-                            </div>
-                            <div  style = {{backgroundColor:'rgb(246,246,246)'}}>
-                                <img src = {require('./img/qq.png')}></img>
-                                <span>1127158610</span>
-                            </div>
-                        </div>
-
-
-                        <div className = 'con_item'>
-                            <h2>android组负责人：许志凡</h2>
-                            <div>
-                                <img src = {require('./img/email.png')}></img>
-                                <span><a href = 'mailto: aurora2459917510@163.com'>2329429060@qq.com</a></span>
-                            </div>
-                            <div>
-                                <img src = {require('./img/qq.png')}></img>
-                                <span>2329429060</span>
-                            </div>
-                        </div> */}
         </section>
       </div>
     </div>

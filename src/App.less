@@ -23,14 +23,22 @@ input {
 }
 
 /* 设置网页统一的字体大小、行高、字体系列相关属性 */
-html{
+html {
   height: 100%;
 }
 body {
   height: 100%;
-  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
-    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  min-height: 100vh;
+  font: 16px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB',
+    'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
   color: #333;
+}
+
+.content {
+  background-color: black;
+  padding-top: 120px;
+  flex: 1;
+  min-height: 100vh;
 }
 
 /* 去除列表默认样式 */
@@ -76,7 +84,7 @@ input {
 /* 双伪元素清除法 */
 .clearfix::before,
 .clearfix::after {
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -84,11 +92,9 @@ input {
   clear: both;
 }
 
-
 /* 后来发现文字样式好像有点一样 */
 * {
   font-family: inherit;
   font-style: inherit;
   font-weight: inherit;
 }
-
