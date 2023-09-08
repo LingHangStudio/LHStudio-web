@@ -60,7 +60,7 @@ const Java: React.FC = () => {
             <img src={require('../img/java_u.jpg').default} alt=""></img>
           </div>
         </div>
-        {/* <div className="java_item" id="join_us">
+        <div className="java_item" id="join_us">
           <h2>{state.can_signup ? '加入我们' : '报名未开始'}</h2>
         </div>
         <div className="java_signup" style={state.can_signup ? null_style : not_allow_signup}>
@@ -74,7 +74,7 @@ const Java: React.FC = () => {
             <input placeholder="qq号码"></input>
           </div>
           <button>提交信息</button>
-        </div> */}
+        </div>
       </div>
     </div>
   );
