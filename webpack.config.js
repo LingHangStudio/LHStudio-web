@@ -10,9 +10,9 @@ module.exports = {
         filename: 'my-first-webpack.bundle.js'
     },
     resolve: {
-        alias: {
-            '@': path.resolve(__dirname, 'src')
-        },
+        // alias: {
+        //     '@': path.resolve(__dirname, 'src')
+        // },
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
     },
     // 模块加载器配置

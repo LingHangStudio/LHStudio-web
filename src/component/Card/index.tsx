@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./styles.less"
+import './styles.less';
 
 export default function Card({ name, path, content, img, reverse }) {
-    const history = useNavigate();
+  const history = useNavigate();
 
   return (
     <div className={`studio_h1 ${reverse ? 'reverse' : ''}`} style={{ flexWrap: 'wrap' }}>

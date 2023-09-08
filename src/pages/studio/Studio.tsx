@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Card from "../../component/Card"
 import './studio.less';
 
 const Studio: React.FC = () => {
@@ -12,8 +11,8 @@ const Studio: React.FC = () => {
       content:
         'JAVA 是一门面向对象编程语言， 全球编程语言流行榜第一名。 Java不仅吸收了C++语言的各种优点， 还摒弃了C++里难以理解的多继承、指针等概念， 因此Java语言具有功能强大和简单易用两个特征。 领航工作室Java组致力于在Java的基础上进行的Java EE开发， 曾开发过领航工作室的官网和学校的活动报名系统等后台系统，并为武科大助手提供后端技术服务 具有强硬的实力和惊人的团队协作能力。', //文案
       reverse: false,
-      // img: './img/java.jpg',
-      img: '@/pages/studio/img/java.jpg',
+      img: './img/java.jpg',
+      // img: '../../static/studio/java.jpg',
       path: '/studio/java', //跳转的路径
     },
     {
@@ -99,13 +98,6 @@ const Studio: React.FC = () => {
             <img src={require('./img/banner1.jpg').default} alt="banner" />
           </div>
         </div>
-
-        {introduceList.map((item) => {
-          return (
-            <Card name={item.name} path={item.path} content={item.content} img={item.img} reverse={item.reverse}></Card>
-          );
-        })}
-
         {introduceList.map((item) => {
           return (
             <div

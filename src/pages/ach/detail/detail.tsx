@@ -10,12 +10,12 @@ const Detail: React.FC = (props) => {
       name: '',
       img: [],
       github: '',
-      download: '',
-    },
+      download: ''
+    }
   });
   useEffect(() => {
     setState({
-      data: data[params.type || ''],
+      data: data[params.type || '']
     });
   }, []);
 
@@ -34,13 +34,13 @@ const Detail: React.FC = (props) => {
           <p>{state.data.dec}</p>
         </div>
         <div className="detail_gd">
-          <p>{state.data.github === null ? '' : 'github地址:   ' + state.data.github}</p>
-          <p>{state.data.download === null ? '' : '下载地址:   ' + state.data.download}</p>
+          <p>{state.data.github && 'github地址:   ' + state.data.github}</p>
+          <p>{state.data.download && '下载地址:   ' + state.data.download}</p>
         </div>
-        {state.data.plat === 'windows' ? (
+        {state.data.plat === 'windows' ? 
           <div className="detail_img_w">
             {state.data.img &&
-              state.data.img.map((item, index) => {
+              state.data.img.map((item:any) => {
                 return (
                   <div className="detail_img_item_w">
                     <img src={require('../img/' + item).default} alt="" />
@@ -48,10 +48,10 @@ const Detail: React.FC = (props) => {
                 );
               })}
           </div>
-        ) : (
+         : 
           <div className="detail_img">
             {state.data.img &&
-              state.data.img.map((item, index) => {
+              state.data.img.map((item:any) => {
                 return (
                   <div className="detail_img_item">
                     <img src={require('../img/' + item).default} alt="" />
@@ -59,7 +59,7 @@ const Detail: React.FC = (props) => {
                 );
               })}
           </div>
-        )}
+        }
       </section>
     </div>
   );
