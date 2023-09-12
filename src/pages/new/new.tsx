@@ -9,7 +9,7 @@ const New: React.FC = () => {
       img: './img/1.jpg',
       class: 'wrap',
       content:
-        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦',
+        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦'
     },
     {
       title: '第十四届领航工作室招新啦',
@@ -17,7 +17,7 @@ const New: React.FC = () => {
       img: './img/1.jpg',
       class: 'wrap-reverse',
       content:
-        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦',
+        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦'
     },
     {
       title: '第十四届领航工作室招新啦',
@@ -25,8 +25,8 @@ const New: React.FC = () => {
       img: './img/1.jpg',
       class: 'wrap',
       content:
-        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦',
-    },
+        '武汉科技大学计算机科学与技术学院领航工作室，现面向2020级大一新生开始招新啦，期待各位小伙伴们的加入哦'
+    }
   ];
 
   return (
@@ -38,7 +38,7 @@ const New: React.FC = () => {
         </div>
         <header className="new_head">通知公告</header>
 
-        {text.map((item) => (
+        {text.map((item) => 
           <>
             <div className={`new_h ${item.class}`}>
               <div className="new_item_img">
@@ -53,7 +53,7 @@ const New: React.FC = () => {
               </div>
             </div>
           </>
-        ))}
+        )}
 
         <header className="new_head" style={{ fontSize: '1.0em', fontWeight: 550 }}>
           加载更多

@@ -15,7 +15,7 @@ const Helper: React.FC = () => {
             </div>
           </div>
           <div className="helper_head_btn">
-            <h1>武科大助手</h1>
+            <div style={{ fontWeight: 'blod', fontSize: '2rem', color: '#fff' }}>武科大助手</div>
             <h2>随时随地 开启校园之旅</h2>
             <div className="helper_head_tag">
               <h4 onClick={() => history('/download')}>安卓端</h4>
@@ -24,7 +24,13 @@ const Helper: React.FC = () => {
               <h4 onClick={() => alert('QQ搜索“武科大助手”小程序')}>QQ小程序</h4>
             </div>
 
-            <h3 className="lh">武汉科技大学 @领航工作室 LingHang Studio.</h3>
+            <img
+              className="QR"
+              src={require('../../static/helper/wusthelperQR.png').default}
+              alt=""
+            />
+
+            <h3 className="">武汉科技大学 @领航工作室 LingHang Studio.</h3>
             <h3 className="lh_url">武科大助手：www.wustlinghang.cn/helper</h3>
             <div className="helper_head_tip">点击按钮跳转...</div>
           </div>
@@ -60,7 +66,7 @@ const Helper: React.FC = () => {
             <p>资讯，黄历，校车，学分统计，教务新闻，考试倒计时，随时随地，开启校园之旅！</p>
           </div>
           <div className="helper_item1">
-            <img src={require('./img/home.jpg').default} alt=""/>
+            <img src={require('./img/home.jpg').default} alt="" />
           </div>
         </div>
       </div>

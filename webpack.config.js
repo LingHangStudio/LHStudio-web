@@ -45,7 +45,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|jpeg|png|gif|svg)$/,
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 use: [
                     {
                         loader: 'url-loader', // 或者使用 'file-loader'

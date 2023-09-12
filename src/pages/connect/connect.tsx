@@ -7,26 +7,26 @@ const Connect: React.FC = () => {
       name: '刘洋',
       post: '主管',
       qq: '978344408',
-      email: 't1.faker@qq.com',
+      email: 't1.faker@qq.com'
     },
     {
       name: '唐富泉',
       post: '前端组长',
       qq: '3198662089',
-      email: 'lseeyou123a@163.com',
+      email: 'lseeyou123a@163.com'
     },
     {
       name: '陈佳逸',
       post: '后端组长',
       qq: '1670149054',
-      email: '1670149054@qq.com',
+      email: '1670149054@qq.com'
     },
     {
       name: '刘新武',
       post: '移动开发组长',
       qq: '2540493541',
-      email: 'liuxinwulxw@qq.com',
-    },
+      email: 'liuxinwulxw@qq.com'
+    }
   ];
   return (
     <div className="con_body">
