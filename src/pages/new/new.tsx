@@ -54,7 +54,6 @@ const New: React.FC = () => {
             </div>
           </>
         )}
-
         <header className="new_head" style={{ fontSize: '1.0em', fontWeight: 550 }}>
           加载更多
         </header>

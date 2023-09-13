@@ -40,7 +40,7 @@ const Detail: React.FC = (props) => {
         {state.data.plat === 'windows' ? 
           <div className="detail_img_w">
             {state.data.img &&
-              state.data.img.map((item:any) => {
+              state.data.img.map((item: any) => {
                 return (
                   <div className="detail_img_item_w">
                     <img src={require('../img/' + item).default} alt="" />
@@ -51,7 +51,7 @@ const Detail: React.FC = (props) => {
          : 
           <div className="detail_img">
             {state.data.img &&
-              state.data.img.map((item:any) => {
+              state.data.img.map((item: any) => {
                 return (
                   <div className="detail_img_item">
                     <img src={require('../img/' + item).default} alt="" />
