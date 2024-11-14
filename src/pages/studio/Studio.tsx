@@ -37,40 +37,40 @@ const Studio: React.FC = () => {
   const photoList = [
     {
       title: 'saassa',
-      img: '',
+      img: ''
     },
     {
       title: '',
-      img: './img/13-0.jpg',
+      img: './img/2024/firstTwo/0.jpg'
     },
     {
       title: '',
-      img: './img/13-1.jpg',
+      img: './img/2024/firstTwo/1.jpg'
     },
     {
       title: '',
-      img: './img/13-2.jpg',
+      img: './img/2024/frontend/0.jpg'
     },
     {
       title: '',
-      img: './img/13-3.jpg',
+      img: './img/2024/backend/0.jpg'
     },
     {
       title: '',
-      img: './img/13-4.jpg',
+      img: './img/2024/and&ios/0.jpg'
     },
     {
       title: '',
-      img: './img/13-5.jpg',
+      img: './img/2024/frontend/1.jpg'
     },
     {
       title: '',
-      img: './img/13-6.jpg',
+      img: './img/2024/backend/1.jpg'
     },
     {
       title: '',
-      img: './img/13-7.jpg',
-    },
+      img: './img/2024/and&ios/1.jpg'
+    }
   ];
 
   return (
@@ -124,13 +124,13 @@ const Studio: React.FC = () => {
 
         <div className="studio_h1 margintop">
           <div className="studio_item66">
-            <img src={require('./img/main-0.jpg').default} alt="" />
+            <img src={require('./img/2024/mainTop1.jpg').default} alt="" />
           </div>
         </div>
 
         <div className="studio_h1">
           <div className="studio_item66">
-            <img src={require('./img/main-1.jpg').default} alt="" />
+            <img src={require('./img/2024/mainTop.jpg').default} alt="" />
           </div>
         </div>
         {/* 尝试栅格布局 */}

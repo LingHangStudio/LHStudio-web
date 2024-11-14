@@ -4,28 +4,28 @@ import './connect.less';
 const Connect: React.FC = () => {
   const peopleInfo = [
     {
-      name: '刘洋',
+      name: '罗然',
       post: '主管',
-      qq: '978344408',
-      email: 't1.faker@qq.com'
+      qq: '2872339658',
+      email: '2872339658@qq.com'
     },
     {
-      name: '唐富泉',
+      name: '林琨毅',
       post: '前端组长',
-      qq: '3198662089',
-      email: 'lseeyou123a@163.com'
+      qq: '3311390251',
+      email: '3311390251@qq.com'
     },
     {
-      name: '陈佳逸',
+      name: '刘阳',
       post: '后端组长',
-      qq: '1670149054',
-      email: '1670149054@qq.com'
+      qq: '2556693598',
+      email: '2556693598@qq.com'
     },
     {
-      name: '刘新武',
+      name: '付一恒',
       post: '移动开发组长',
-      qq: '2540493541',
-      email: 'liuxinwulxw@qq.com'
+      qq: '3313882272',
+      email: '3313882272@qq.com'
     }
   ];
   return (
